@@ -1,3 +1,8 @@
+= 0.40 =
+* implement corporate design
+* implement different legends for reviewBox in quiz and review status
+* change question review function to show always one question
+
 = 0.37 =
 * New frontend init structure
 * Added gulp support
