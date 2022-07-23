@@ -454,19 +454,23 @@ wpProQuizReady(function () {
                 var color = '';
                 var itemStatus = itemsStatus[index];
 
-                var fontColor = '#FFFFFF';
+                var fontColor = '#000';
                 switch (element.reviewBoxStatus){
                     case 1:
                         if (itemStatus.correct) {
+                            fontColor = '#FFFFFF';
                             color = '#30C945';
                         } else if (!itemStatus.correct) {
+                            fontColor = '#FFFFFF';
                             color = '#C94530';
                         }
                         break;
                     default:
                         if (itemStatus.review) {
+                            fontColor = '#FFFFFF';
                             color = '#FFB800';
                         } else if (itemStatus.solved) {
+                            fontColor = '#FFFFFF';
                             color = '#30C945';
                         }
                         break;
