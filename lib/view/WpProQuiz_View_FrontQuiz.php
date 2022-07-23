@@ -661,13 +661,21 @@ class WpProQuiz_View_FrontQuiz extends WpProQuiz_View_View
             </div>
             <div class="wpProQuiz_reviewLegend">
                 <ol>
-                    <li>
-                        <span class="wpProQuiz_reviewColor" style="background-color: #6CA54C;"></span>
+                    <li class="wpProQuiz_legendQuizIsRunning">
+                        <span class="wpProQuiz_reviewColor" style="background-color: #30c945;"></span>
                         <span class="wpProQuiz_reviewText"><?php _e('Answered', 'wp-pro-quiz'); ?></span>
                     </li>
-                    <li>
+                    <li class="wpProQuiz_legendQuizIsRunning">
                         <span class="wpProQuiz_reviewColor" style="background-color: #FFB800;"></span>
                         <span class="wpProQuiz_reviewText"><?php _e('Review', 'wp-pro-quiz'); ?></span>
+                    </li>
+                    <li class="wpProQuiz_legendNowIsReviewTime">
+                        <span class="wpProQuiz_reviewColor" style="background-color: #30C945;"></span>
+                        <span class="wpProQuiz_reviewText"><?php _e('Richtig', 'wp-pro-quiz'); ?></span>
+                    </li>
+                    <li class="wpProQuiz_legendNowIsReviewTime">
+                        <span class="wpProQuiz_reviewColor" style="background-color: #C94530;"></span>
+                        <span class="wpProQuiz_reviewText"><?php _e('Falsch', 'wp-pro-quiz'); ?></span>
                     </li>
                 </ol>
                 <div style="clear: both;"></div>

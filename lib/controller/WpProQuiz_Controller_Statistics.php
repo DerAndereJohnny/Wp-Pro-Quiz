@@ -190,10 +190,10 @@ class WpProQuiz_Controller_Statistics extends WpProQuiz_Controller_Controller
         $avgTime = null;
 
         if ($modus == WpProQuiz_Model_Quiz::QUIZ_MODUS_SINGLE) {
-            $avgTime = ceil($array['comp']['quizTime'] / count($question));
+            $avgTime = ceil($array['complete']['quizTime'] / count($question));
         }
 
-        unset($array['comp']);
+        unset($array['complete']);
 
         $ak = array_keys($array);
 
