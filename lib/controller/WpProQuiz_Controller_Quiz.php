@@ -807,7 +807,7 @@ class WpProQuiz_Controller_Quiz extends WpProQuiz_Controller_Controller
         $categoryMapper = new WpProQuiz_Model_CategoryMapper();
         $formMapper = new WpProQuiz_Model_FormMapper();
 
-        $is100P = $data['results']['comp']['result'] == 100;
+        $is100P = $data['results']['complete']['result'] == 100;
 
         $quiz = $quizMapper->fetch($data['quizId']);
 
@@ -820,7 +820,7 @@ class WpProQuiz_Controller_Quiz extends WpProQuiz_Controller_Controller
 
         $ctr->setResultCookie($quiz);
 
-        $ctr->emailNote($quiz, $data['results']['comp'], $categories, $forms,
+        $ctr->emailNote($quiz, $data['results']['complete'], $categories, $forms,
             isset($data['forms']) ? $data['forms'] : array());
 
         if (!$ctr->isPreLockQuiz($quiz)) {
