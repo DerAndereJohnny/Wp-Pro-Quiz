@@ -20,7 +20,7 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-define('WPPROQUIZ_VERSION', '0.40');
+define('WPPROQUIZ_VERSION', '0.41');
 
 define('WPPROQUIZ_DEV', false);
 

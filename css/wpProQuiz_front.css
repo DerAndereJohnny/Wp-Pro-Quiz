@@ -13,7 +13,7 @@
 }
 
 .wpProQuiz_content {
-    margin-top: 10px !important;
+    margin-top: 0 !important;
     margin-bottom: 10px !important;
 }
 
@@ -513,7 +513,7 @@
 }
 
 .wpProQuiz_reviewDiv {
-    margin: 20px 0 20px 0 !important;
+    margin: 0 0 20px 0 !important;
 }
 
 .wpProQuiz_header {
